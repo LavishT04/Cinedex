@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinedex</title>
+    <link
+            rel="icon"
+            href=
+"/img/logo.png"
+            type="image/x-icon"
+        />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body class="bg-black">
+
+
+    <header>
+            <!-- Nav-Bar -->
+        <div >
+            <nav class="navbar navbar-expand-lg  navbar bg-black sticky-top" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <h3 style="color: aqua;"><img src="img/logo.png" height="50" width="100"></h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class=" nav-link active m-2 " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-2 " href="Galary.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-2" href="about-us.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-2" href="contact-us.html">Contact us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2  " type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-info" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Nav-Bar -->
+
+    <!-- Video section -->
+    <div class="position-relative overflow-hidden">
+        <div class="d-flex min-vh-100" lc-helper="video-bg">
+            <video style="z-index:1;object-fit: cover; object-position: 50% 50%;" class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+                <source src="img/BG-video.mp4" type="video/mp4">
+            </video>
+            <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+                <div class="lc-block mb-4">
+                    <div editable="rich">
+                        <h1 class="display-1 fw-bolder">Everything Everywhere At Once</h1>
+                    </div>
+                </div>
+    
+                <div class="lc-block">
+                    <div editable="rich">
+                        <p class="lead"><strong>Stark<sub>Movies</sub></strong> is a hub of bollywood full movies, hollywood hindi dubbed movies, south indian movies where you can get to know about every detail.</p>
+    
+                        <p class="lead">A movie blog site for the latest in movie reviews, movie trailers, and movie editorals.</p>
+    
+                    </div>
+                </div>
+    
+                <div class="lc-block">
+                    <button class=" btn btn-primary p-2 " data-bs-toggle="modal"
+                        data-bs-target="#sign-inModal">sign-in</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video section -->
+
+<!-- Hero -->
+    
+    <div class="bg-dark text-secondary px-4 py-5">
+        <div class="row">
+            <div class="col-md-5 my-auto p-5">
+                <div class="lc-block">
+                    <img class="img-fluid" alt="" src="img/hero image.png"  >
+                </div>
+            </div>
+            <div class="col-md-7" style="padding:10vw">
+                
+                
+                <div class="lc-block mb-3 me-lg-5">
+                    <div editable="rich">
+                        <h1 class="display-5 fw-bold text-white">Reavel The Power Of Movies</h1>
+                        <p class="lead">Where to watch movies online? A movie evening always starts by a very time-consuming and frustrating search of where to watch movies online.
+                            You are searching for movies to rent or for movies to buy? Use our « Price » filter or check out the most popular providers for buying and renting movies!
+                             <br>
+                              For new movie releases check here</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="#membership" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Membership</a>
+                    <a href="about-us.html" class="btn btn-outline-light btn-lg px-4">About us</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- Hero -->
+
+<!-- sign-in -->
+    <div class="modal fade" id="sign-inModal" tabindex="-1" aria-labelledby="sign-inModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light ">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sign-inModalLabel">Sign-in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form1">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Stay Log-in</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign-in -->
+
+    <!-- Card -->
+    <br>
+    <br>
+    <br>
+    <div editable="rich" style="text-align: center;">
+    <h1 class="display-5 fw-bold text-white">Our top Movies</h1>
+        <h3>For more movie go to the Gallery </h3>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="Galary.html" class="btn btn-outline-danger btn-lg px-4 me-sm-3 fw-bold">Gallery</a>
+        
+    </div>
+    </div>
+<style>
+    .glass_background {background: rgba( 255, 255, 255, 0.3 ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); backdrop-filter: blur( 6.5px ); -webkit-backdrop-filter: blur( 6.5px );}
+ </style>
+ <div class="container py-5">
+     <div class="row">
+         <div class="col-lg-3 col-6 g-3 position-relative">
+             <div class="lc-block position-absolute bottom-0 start-0 w-100 text-center ">
+                 <div editable="rich">
+                     <h3 class="glass_background mx-2 text-white">Avengers</h3>
+                 </div>
+             </div>
+             
+             <div class="lc-block">
+                 <img class="img-fluid hover" src="img/Avengers.jpg" loading="lazy" width="1080" height="768">
+             </div>
+             
+         </div>
+         
+         <div class="col-lg-3 col-6 g-3 position-relative">
+             <div class="lc-block text-white position-absolute bottom-0 start-0 w-100 text-center">
+                 <div editable="rich">
+                     <h3 class="glass_background mx-2 text-white">Herry Potter</h3>
+                 </div>
+             </div>
+             
+             <div class="lc-block">
+                 <img class="img-fluid" src="img/harry potter.jpg" loading="lazy" width="1080" height="768">
+             </div>
+             
+         </div>
+         
+         <div class="col-lg-3 col-6 g-3 position-relative">
+             <div class="lc-block text-white position-absolute bottom-0 start-0 w-100 text-center">
+                 <div editable="rich">
+                     <h3 class="glass_background mx-2 text-white">Baby Driver</h3>
+                 </div>
+             </div>
+             
+             <div class="lc-block">
+                 <img class="img-fluid" src="img/babyDriver.jpg" loading="lazy" width="1080" height="768">
+             </div>
+             
+         </div>
+         
+         <div class="col-lg-3 col-6 g-3 position-relative">
+             <div class="lc-block text-white position-absolute bottom-0 start-0 w-100 text-center">
+                 <div editable="rich">
+                     <h3 class="glass_background mx-2 text-white">Weathering With You</h3>
+                 </div>
+             </div>
+             
+             <div class="lc-block">
+                 <img class="img-fluid" src="img/weathering-with-you.jpg" loading="lazy" width="1080" height="768">
+             </div>
+             
+         </div>
+         
+     </div>
+ </div>
+ <!-- Card -->
+
+ <!-- #membership -->
+ <section id="membership">
+
+
+<div class="bg-dark text-secondary px-4 py-5">
+<div class=" container py-4">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<div class="lc-block mb-4"><span editable="inline" class="mt-4 d-block lead">OUR PRICING PLANS</span>
+				<h2 editable="inline" class="display-2 mb-3 display-5 fw-bold text-white"><b>Find the Right One Now!</b></h2>
+				<p editable="inline" class="text-secondary">Flexible pricing options for freelancers and design teams. No Credit Card required!<br></p>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-4" id="pricing">
+		<div class="col-lg-4 mb-4 mb-lg-0">
+			<div class="lc-block py-3 shadow-sm bg-black text-white rounded">  
+
+				<div class="lc-block mb-4 text-left px-4"> <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="2em" height="2em" viewBox="0 0 24 24"  lc-helper="svg-icon" fill="currentColor">
+						<path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z"></path>
+					</svg>
+
+					<span editable="inline" class="ml-2 fw-light">Individual</span>
+				</div>
+				<div class="lc-block mb-5 px-4">
+					<div editable="rich">
+						<h2 class="text-light">Professional</h2>
+
+						<p class="h5">$19.99 <span class="text-secondary fw-light">/month</span></p>
+					</div>
+				</div>
+
+				<div class="lc-block mb-5 text-left">
+					<div editable="rich">
+
+						<ul>
+							<li>1 users</li>
+							<li>Limited Movies up-t0 200</li>
+							<li>Premium productivity features and simple, secure movie sharing</li>
+						</ul>
+					</div>
+				</div>
+				<div class="lc-block mb-4 text-center"><a class="btn btn-outline-danger " href="#" role="button">Try free for 30 days</a></div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 mb-4 mb-lg-0">
+			<div class="lc-block py-3 rounded shadow bg-dark">
+				<div class="lc-block mb-4 text-left px-4"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="text-primary" width="2em" height="2em" viewBox="0 0 24 24"  lc-helper="svg-icon" fill="currentColor">
+						<path d="M19 17V19H7V17S7 13 13 13 19 17 19 17M16 8A3 3 0 1 0 13 11A3 3 0 0 0 16 8M19.2 13.06A5.6 5.6 0 0 1 21 17V19H24V17S24 13.55 19.2 13.06M18 5A2.91 2.91 0 0 0 17.11 5.14A5 5 0 0 1 17.11 10.86A2.91 2.91 0 0 0 18 11A3 3 0 0 0 18 5M7.34 8.92L8.5 10.33L3.75 15.08L1 12.08L2.16 10.92L3.75 12.5L7.34 8.92"></path>
+					</svg>
+
+					<span editable="inline" class="ml-2 fw-light">Family</span>
+				</div>
+				<div class="lc-block mb-5 px-4">
+					<div editable="rich">
+						<h2 class=" ">Standard</h2>
+
+						<p class="h5 text-primary">$39.99 <span class="text-secondary fw-light">/month</span></p>
+					</div>
+				</div>
+
+				<div class="lc-block mb-5 text-left">
+					<div editable="rich">
+
+						<ul>
+							<li> 5 users</li>
+							<li> Unlimited Movies</li>
+							<li> Premium productivity features and simple, secure Movies sharing</li>
+						</ul>
+					</div>
+				</div>
+				<div class="lc-block mb-4 text-center"><a class="btn btn-outline-danger " href="#" role="button">Try free for 30 days</a></div>
+			</div>
+		</div>
+		<div class="col-lg-4 ">
+			<div class="lc-block py-3 rounded border">
+				<div class="lc-block mb-4 text-left px-4"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="text-primary" width="2em" height="2em" viewBox="0 0 24 24"  lc-helper="svg-icon" fill="currentColor">
+						<path d="M5,3V21H11V17.5H13V21H19V3H5M7,5H9V7H7V5M11,5H13V7H11V5M15,5H17V7H15V5M7,9H9V11H7V9M11,9H13V11H11V9M15,9H17V11H15V9M7,13H9V15H7V13M11,13H13V15H11V13M15,13H17V15H15V13M7,17H9V19H7V17M15,17H17V19H15V17Z"></path>
+					</svg>
+
+					<span editable="inline" class="ml-2 fw-light">Family And Friends</span>
+				</div>
+				<div class="lc-block mb-5 px-4">
+					<div editable="rich">
+						<h2 class=" ">Ultimate</h2>
+
+						<p class="h5 text-primary">$99.99 <span class="text-secondary fw-lighter">/month</span></p>
+					</div>
+				</div>
+
+				<div class="lc-block mb-5 text-left">
+					<div editable="rich">
+
+						<ul>
+							<li>+20 users</li>
+							<li>Unlimited Movies and Web-Series</li>
+							<li> Premium productivity features and simple, secure Movies sharing</li>
+						</ul>
+					</div>
+				</div>
+				<div class="lc-block mb-4 text-center"><a class="btn btn-outline-danger" href="#" role="button">Try free for 30 days</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+ </section>
+ <!-- #membership -->
+    
+ <!-- Foooter-section -->
+
+ <div class="container">
+    <br><br><br>
+    <footer class=" py-1 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+            <li class="nav-item"><a href="Galary.html" class="nav-link px-2 text-light">Gallery</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-light">About us</a></li>
+            <li class="nav-item"><a href="contact-us.html" class="nav-link px-2 text-light">Contact us</a></li>
+        </ul>
+        <p class="text-center text-light ">&copy; 2023 Stark<sub>Movies</sub> , Inc</p>
+    </footer>
+</div>
+
+<!-- Foooter-section -->
+    
+    <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
