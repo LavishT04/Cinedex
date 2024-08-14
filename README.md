@@ -1,2 +1,1 @@
-Link
-<a herf="https://lavisht04.github.io/Cinedex/"/>
+Link[https://lavisht04.github.io/Cinedex]
